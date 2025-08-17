@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+.env
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Local data & outputs
+data/
+eval_out/
+runs/
+dist/
+artifacts.json
+generation_policy.json
+experiments.csv
+data_*.json
+data_*.yaml
+data_contract.json
+data_catalog.json
+data_report.json
+
+# macOS
+.DS_Store
