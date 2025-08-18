@@ -1,3 +1,4 @@
+> ⚡️ Built with the help of OpenAI’s ChatGPT, iteratively co-developed into a working training pipeline.
 > ### Explanation and Apology
 > I am NOT an expert in AI, or Python, or Notebooks, However I found I needed to train my M4 Mac with some journals I had written.
 >
@@ -6,8 +7,7 @@ asked GPT-5 to make me a notebook.  We built this notebook over three days and i
 >
 > Have fun, or a similar emotion.
 >
->Geemo Beamo
-
+> Geemo Beamo
 # MLX Fine-Tuning Starter (Apple Silicon)
 
 End-to-end LoRA fine-tuning on Apple hardware using **MLX-LM** — no CUDA.
