@@ -39,4 +39,69 @@ jupyter lab
 - `eval_out/…` (reports, final_generations, `repro.sh`)
 - `dist/*.tar.gz` (freeze bundles)
 
+## 📂 Notebook Outputs
+
+Running the training notebook produces several files and directories.  
+Here’s what they are for:
+
+- **`data/train.jsonl`**, **`data/valid.jsonl`**  
+  Processed training and validation splits in JSONL format.  
+
+- **`data_contract.json`**  
+  Describes dataset schema (field names, types) and file locations.  
+
+- **`data_catalog.json`**  
+  Records dataset statistics (counts, sizes) for train/valid splits.  
+
+- **`data_report.json`**  
+  Extended dataset report with quality checks and summary info.  
+
+- **`experiments.csv`**  
+  Log of training runs, hyperparameters, and adapter paths.  
+
+- **`generation_policy.json`**  
+  Rules for prompt formatting and artifact preference during generation.  
+
+- **`artifacts.json`**  
+  Index of produced artifacts (adapter, fused, quantized models).  
+
+- **`run_manifest.yaml`**  
+  Summary manifest of a training run: configs, inputs, and outputs.  
+
+- **`requirements.lock`**  
+  Frozen Python dependencies used during training.  
+
+- **`runs/`**  
+  Directory holding actual model outputs:  
+  - `adapter/` – LoRA adapter weights  
+  - `fused/` – full fused model  
+  - `quantized/` – quantized version for efficient inference  
+
+- **`eval_out/`**  
+  Evaluation outputs, including:  
+  - `report.md` – eval summary  
+  - `repro.sh` – reproducible bash script to re-run the run  
+
+- **`dist/`**  
+  “Frozen” bundles for distribution (tarball archives with manifest + run files).
+
+## 🚀 Minimal Essential Files
+
+If you just want to train and use your model quickly, the key outputs are:
+
+- **`data/train.jsonl`**, **`data/valid.jsonl`**  
+  Training and validation data.
+
+- **`runs/adapter/`**  
+  LoRA adapter weights (can be loaded into the base model).
+
+- **`runs/fused/`**  
+  Full fused model (adapter + base merged).
+
+- **`runs/quantized/`**  
+  Quantized model for efficient inference on Apple Silicon.
+
+- **`eval_out/repro.sh`**  
+  Bash script to reproduce training, fusion, quantization, and generation. 
+
 ---
