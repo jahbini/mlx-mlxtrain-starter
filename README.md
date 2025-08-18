@@ -10,6 +10,6 @@ Notebook includes: data prep → training → fuse/quantize → eval/ablation �
 
 ## Setup
 ```bash
-conda env create -f environment.yml
+conda env create -f environment.yml -n mlxtrain
 conda activate mlxtrain
 jupyter lab
