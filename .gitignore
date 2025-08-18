@@ -23,6 +23,7 @@ data_*.yaml
 data_contract.json
 data_catalog.json
 data_report.json
+format_policy.json
 
 # macOS
 .DS_Store
