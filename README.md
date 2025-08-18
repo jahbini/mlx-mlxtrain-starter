@@ -7,6 +7,7 @@ Notebook includes: data prep → training → fuse/quantize → eval/ablation �
 - Apple Silicon (M-series)
 - macOS 14+
 - Conda or Python 3.11
+  Install Conda from https://www.anaconda.com/download
 
 ## Setup
 ```bash
