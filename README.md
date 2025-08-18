@@ -1,3 +1,13 @@
+> ### Explanation and Apology
+> I am NOT an expert in AI, or Python, or Notebooks, However I found I needed to train my M4 Mac with some journals I had written.
+>
+> I was amazed at the confusing, conflicting and version specific suggestions on Youtube and the web.  And I was desperate, so I
+asked GPT-5 to make me a notebook.  We built this notebook over three days and it seems to do what every AI dreamer dreams about.
+>
+> Have fun, or a similar emotion.
+>
+>Geemo Beamo
+
 # MLX Fine-Tuning Starter (Apple Silicon)
 
 End-to-end LoRA fine-tuning on Apple hardware using **MLX-LM** — no CUDA.
