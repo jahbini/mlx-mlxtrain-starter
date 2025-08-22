@@ -10,8 +10,20 @@ paths:                            # replaces *_PATH constants
   catalog:  "data_catalog.json"
   report:   "data_report.json"
   policy:   "format_policy.json"
+  generations: "generations"
+  tokenizer: "tokenizer_meta"
+  analysis: "eos_analysis"
+  summary: "eos_summary"
+  ablations: "ablation_generations.jsonl"
+
+eval:
+  output_dir: "eval_out"
+  report: "report.md"
+  policy: "generation_policy.json"
+  recreate: "repro.sh"
 
 data:
+  output_dir: "data"              # replaces OUT_DIR
   hf_dataset: "asuender/motivational-quotes"
   subset: "quotes"
   mode: "sft"
